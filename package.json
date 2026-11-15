@@ -1,0 +1,22 @@
+{
+  "name": "nestmate",
+  "version": "1.0.0",
+  "description": "Nestmate - 100% Free, Privacy-First Daily Utility Tools Suite (QuoteCraft, QR Studio, OmniCalc)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "utilities",
+    "quotecraft",
+    "qr-studio",
+    "omnicalc",
+    "privacy-first",
+    "free-tools",
+    "offline-ready"
+  ],
+  "author": "Nestmate Group",
+  "license": "MIT"
+}

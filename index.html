@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestmate — 100% Free, Privacy-First Daily Utility Tools</title>
+    <meta name="description" content="Nestmate is an independent suite of 100% free, privacy-first web utilities: QuoteCraft, QR Studio, and OmniCalc. Zero logins, zero paywalls, zero tracking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+    <link rel="apple-touch-icon" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ==========================================================
+         GOOGLE ADSENSE HEAD SCRIPT
+         Replace ca-pub-XXXXXXXXXXXXXXXX with your AdSense Publisher ID.
+         ========================================================== -->
+    <!--
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+            crossorigin="anonymous"></script>
+    -->
+</head>
+<body>
+
+    <!-- Ambient Visual Glows -->
+    <div class="ambient-bg">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+    </div>
+    <div class="grid-pattern"></div>
+
+    <div class="content-wrapper">
+
+        <!-- Top Announcement Banner -->
+        <aside class="announcement-bar">
+            <span class="announcement-badge">COMMUNITY PROMISE</span>
+            <span>✨ 100% Free Everyday Utilities • Zero Account Sign-ups • Zero Paywalls • 100% In-Browser Privacy</span>
+        </aside>
+
+        <!-- Global Header Navigation -->
+        <header class="site-header">
+            <div class="container nav-row">
+                <a href="#hero" class="brand-link" aria-label="Nestmate Home">
+                    <img src="assets/favicon.jpg" alt="Nestmate Logo" class="brand-logo-img" width="38" height="38">
+                    <div class="brand-name">
+                        Nestmate
+                        <!-- <span class="brand-tag">SUITE</span> -->
+                    </div>
+                </a>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="#products">Products</a></li>
+                        <li class="nav-item"><a href="#comparison">Why Us?</a></li>
+                        <li class="nav-item"><a href="#manifesto">Manifesto</a></li>
+                        <li class="nav-item"><a href="#roadmapSection">Roadmap</a></li>
+                        <li class="nav-item"><a href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a href="mailto:nestmategroup@gmail.com?subject=Nestmate%20Bug%20Report%20/%20Support" title="Report a Bug or Request Support">Support</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <button type="button" class="cmd-search-btn" id="cmdSearchBtn" title="Search all tools (⌘K)">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span>Search Tools...</span>
+                        <kbd class="kbd-shortcut">⌘K</kbd>
+                    </button>
+
+                    <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
+                        <!-- Icon injected by JS -->
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section" id="hero">
+                <div class="container">
+                    <div class="hero-pill">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>100% IN-BROWSER & PRIVACY-FIRST SUITE</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Everyday Utility Tools.<br>
+                        <span class="gradient-text">100% Free. Zero Logins. Pure Privacy.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Nestmate is an independent ecosystem of production-grade web applications built for freelancers, contractors, marketers, and everyday users. Generate client-ready proposals, create custom barcodes, and calculate complex formulas—all directly in your browser with zero paywalls, zero cookies, and zero watermarks.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#products" class="btn-primary">
+                            <span>Explore Product Suite</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#quoteCraftCard" class="btn-secondary">
+                            <span>Try Live Sandboxes</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Trust & Value Metrics Strip -->
+                    <div class="trust-metrics-strip">
+                        <div class="metric-item">
+                            <div class="metric-icon-wrap green">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="metric-value">100% Free</div>
+                                <div class="metric-label">No subscriptions or paywalls</div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <div class="metric-icon-wrap indigo">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7.5" r="4"></circle>
+                                    <line x1="18" y1="8" x2="23" y2="13"></line>
+                                    <line x1="23" y1="8" x2="18" y2="13"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="metric-value">0 Accounts</div>
+                                <div class="metric-label">No sign-up or email required</div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <div class="metric-icon-wrap amber">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="metric-value">Client-Side</div>
+                                <div class="metric-label">0 bytes stored on remote servers</div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <div class="metric-icon-wrap cyan">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="metric-value">78+ Tools</div>
+                                <div class="metric-label">Covering 12 major domains</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Google Ad Placement Slot 1: Top Responsive Banner -->
+            <div class="ad-container">
+                <span class="ad-label">Advertisement / Sponsor</span>
+                <div class="ad-banner-slot">
+                    <!-- Paste your Google Ad Unit snippet here:
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <div class="ad-placeholder-text">
+                        <span>📢 Google AdSense Slot 1 (Responsive Leaderboard: 728x90 / 970x90 / 320x50)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Filter Bar -->
+            <section class="filter-section" id="products">
+                <div class="container">
+                    <nav class="filter-nav" aria-label="Tool Categories">
+                        <button type="button" class="filter-btn active" data-filter="all">
+                            <span>All Products</span>
+                            <span class="filter-count">3</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-filter="quotecraft">
+                            <span>QuoteCraft</span>
+                            <span class="filter-count">Invoicing</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-filter="qrstudio">
+                            <span>QR Studio</span>
+                            <span class="filter-count">Barcodes</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-filter="omnicalc">
+                            <span>OmniCalc</span>
+                            <span class="filter-count">78+ Tools</span>
+                        </button>
+                        <button type="button" class="filter-btn" data-filter="upcoming">
+                            <span>Roadmap</span>
+                            <span class="filter-count">Next</span>
+                        </button>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- Products Showcase Container -->
+            <section class="container products-container">
+
+                <!-- PRODUCT 1: QUOTECRAFT -->
+                <article class="product-card quotecraft" id="quoteCraftCard">
+                    <div class="product-layout">
+                        <!-- Left Info Column -->
+                        <div class="product-info">
+                            <div class="badge-row">
+                                <span class="product-category-badge badge-emerald">PROPOSAL & DOCUMENT DESIGNER</span>
+                                <span class="status-badge-free">100% Free • No Sign-Up</span>
+                            </div>
+
+                            <h2 class="product-title">
+                                <span class="gradient-craft">QuoteCraft</span>
+                            </h2>
+                            <p class="product-tagline">
+                                Instant, Privacy-First Online Quotation Maker & Commercial Proposal Designer
+                            </p>
+
+                            <p class="product-description-text">
+                                Built for freelancers, contractors, and businesses to create client-ready commercial proposals in minutes without registering an account. It features an automated precision calculation engine that handles itemized rates, discounts, multi-currency formatting, and taxes (like GST or VAT), alongside 14+ curated industry templates, company logo branding, digital QR verification, and custom commercial terms. Everything works directly in your browser with offline support and local data persistence, allowing you to instantly generate and download clean, multi-page, high-resolution PDF quotations with zero paywalls or watermarks.
+                            </p>
+
+                            <!-- Highlights Checkpoints -->
+                            <div class="product-features-grid">
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Automated Calculation:</strong> Itemized rates, discounts, GST/VAT & currency rules.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>14+ Industry Layouts:</strong> Tailored for agency, tech, consulting & trades.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Branding & Verification:</strong> Upload logo & generate scannable digital QR seals.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Clean Multi-Page PDF:</strong> High-res vector export with zero watermarks.</span>
+                                </div>
+                            </div>
+
+                            <!-- Spec Tags Cloud -->
+                            <div class="spec-tags-cloud">
+                                <span class="spec-pill">14+ Templates</span>
+                                <span class="spec-pill">GST / VAT Engine</span>
+                                <span class="spec-pill">Multi-Currency</span>
+                                <span class="spec-pill">Offline Support</span>
+                                <span class="spec-pill">Local Persistence</span>
+                                <span class="spec-pill">Zero Watermarks</span>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="product-actions">
+                                <button type="button" class="btn-primary" onclick="window.openQuotePreviewModal()">
+                                    <span>Generate Quotation</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn-secondary" onclick="openProductSpecModal('quotecraft')">
+                                    <span>Technical Specs</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Interactive Sandbox Column -->
+                        <div class="sandbox-column">
+                            <div class="sandbox-card">
+                                <div class="sandbox-header">
+                                    <div class="sandbox-title-wrap">
+                                        <span class="sandbox-live-dot"></span>
+                                        <span>Interactive Proposal Sandbox</span>
+                                    </div>
+                                    <span style="font-size:0.75rem; color:var(--brand-emerald); font-weight:700;">LIVE ENGINE</span>
+                                </div>
+
+                                <div class="sandbox-body">
+                                    <div class="input-row">
+                                        <div>
+                                            <label class="input-label" for="quoteClient">Client / Entity</label>
+                                            <input type="text" id="quoteClient" class="input-field" value="Acme Global Inc.">
+                                        </div>
+                                        <div>
+                                            <label class="input-label" for="quoteCurrency">Currency</label>
+                                            <select id="quoteCurrency" class="select-field">
+                                                <option value="USD">USD ($)</option>
+                                                <option value="EUR">EUR (€)</option>
+                                                <option value="GBP">GBP (£)</option>
+                                                <option value="INR">INR (₹)</option>
+                                                <option value="CAD">CAD ($)</option>
+                                                <option value="AUD">AUD ($)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Items Table -->
+                                    <div>
+                                        <table class="quote-items-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Description</th>
+                                                    <th style="text-align:center;">Qty</th>
+                                                    <th style="text-align:right;">Rate</th>
+                                                    <th style="text-align:right;">Total</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="quoteItemsBody">
+                                                <!-- Dynamic rows rendered by JS -->
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn-add-item" id="addQuoteItemBtn">+ Add Deliverable Line</button>
+                                    </div>
+
+                                    <!-- Tax & Discount Controls -->
+                                    <div class="input-row">
+                                        <div>
+                                            <label class="input-label" for="quoteDiscount">Discount (%)</label>
+                                            <input type="number" id="quoteDiscount" class="input-field" min="0" max="100" value="5">
+                                        </div>
+                                        <div>
+                                            <label class="input-label" for="quoteTax">Tax / GST / VAT (%)</label>
+                                            <input type="number" id="quoteTax" class="input-field" min="0" max="100" value="18">
+                                        </div>
+                                    </div>
+
+                                    <!-- Live Summary Calculation -->
+                                    <div class="quote-summary-box">
+                                        <div class="summary-line">
+                                            <span>Subtotal</span>
+                                            <span id="quoteSubtotal" style="font-family:var(--font-mono);">$0.00</span>
+                                        </div>
+                                        <div class="summary-line">
+                                            <span>Discount Applied</span>
+                                            <span id="quoteDiscountVal" style="color:var(--brand-rose); font-family:var(--font-mono);">-$0.00</span>
+                                        </div>
+                                        <div class="summary-line">
+                                            <span>Tax Calculation</span>
+                                            <span id="quoteTaxVal" style="color:var(--brand-emerald); font-family:var(--font-mono);">+$0.00</span>
+                                        </div>
+                                        <div class="summary-line total">
+                                            <span>Grand Total</span>
+                                            <span id="quoteGrandTotal">$0.00</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sandbox Footer Buttons -->
+                                    <div style="display:flex; gap:0.5rem;">
+                                        <button type="button" class="btn-primary" id="printQuoteBtn" style="flex:1; justify-content:center; padding:0.65rem 1rem; font-size:0.86rem;">
+                                            <span>Preview Proposal</span>
+                                        </button>
+                                        <button type="button" class="btn-secondary" id="copyQuoteBtn" style="flex:1; justify-content:center; padding:0.65rem 1rem; font-size:0.86rem;">
+                                            <span>Copy Text</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 2: QR STUDIO -->
+                <article class="product-card qrstudio" id="qrStudioCard">
+                    <div class="product-layout">
+                        <!-- Left Info Column -->
+                        <div class="product-info">
+                            <div class="badge-row">
+                                <span class="product-category-badge badge-indigo">SCANNABLE BARCODE TOOLKIT</span>
+                                <span class="status-badge-free">100% Free • No Sign-Up</span>
+                            </div>
+
+                            <h2 class="product-title">
+                                <span class="gradient-qr">QR Studio</span>
+                            </h2>
+                            <p class="product-tagline">
+                                Privacy-First Online QR Code Generator & Barcode Management Suite
+                            </p>
+
+                            <p class="product-description-text">
+                                Built for businesses, freelancers, marketers, restaurants, and event organizers to create, customize, and manage scannable barcodes in seconds without registering an account. It features a versatile multi-format generation engine supporting 10 distinct QR types—including website URLs, instant Wi-Fi access, WhatsApp chats, vCard 3.0 digital business cards, calendar events, email, and phone numbers—alongside bespoke color gradients, custom dot and corner patterns, company logo branding, eye-catching "Scan Me" frames, live WCAG contrast checking, camera scanning, and bulk spreadsheet generation from CSV and Excel files. Everything runs directly inside your web browser with local in-memory processing, allowing you to instantly generate, scan, and export permanent, non-expiring barcodes in print-ready vector SVG, ultra-HD PNG (up to 2048px), and printable PDF with zero subscriptions, paywalls, or watermarks.
+                            </p>
+
+                            <!-- Highlights Checkpoints -->
+                            <div class="product-features-grid">
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>10 Distinct Formats:</strong> Wi-Fi, vCard 3.0, WhatsApp, URLs, Calendar events & SMS.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Design Precision:</strong> Custom gradients, corner eyes & "Scan Me" visual frames.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Live WCAG Contrast:</strong> Real-time accessibility verification for zero scan failures.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Bulk CSV Batching:</strong> In-browser bulk generation from spreadsheets with zero uploads.</span>
+                                </div>
+                            </div>
+
+                            <!-- Spec Tags Cloud -->
+                            <div class="spec-tags-cloud">
+                                <span class="spec-pill">10 QR Formats</span>
+                                <span class="spec-pill">vCard 3.0</span>
+                                <span class="spec-pill">Vector SVG</span>
+                                <span class="spec-pill">2048px Ultra-HD</span>
+                                <span class="spec-pill">Bulk Spreadsheet Import</span>
+                                <span class="spec-pill">Non-Expiring Barcodes</span>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="product-actions">
+                                <button type="button" class="btn-primary" onclick="document.getElementById('qrTextInput').focus()">
+                                    <span>Generate Barcode</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn-secondary" onclick="openProductSpecModal('qrstudio')">
+                                    <span>Technical Specs</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Interactive Sandbox Column -->
+                        <div class="sandbox-column">
+                            <div class="sandbox-card">
+                                <div class="sandbox-header">
+                                    <div class="sandbox-title-wrap">
+                                        <span class="sandbox-live-dot"></span>
+                                        <span>Interactive QR Code Studio</span>
+                                    </div>
+                                    <span style="font-size:0.75rem; color:var(--brand-indigo); font-weight:700;">CLIENT CANVAS</span>
+                                </div>
+
+                                <div class="sandbox-body">
+                                    <div class="input-row">
+                                        <div>
+                                            <label class="input-label" for="qrTypeSelect">Barcode Type</label>
+                                            <select id="qrTypeSelect" class="select-field">
+                                                <option value="url">Website URL</option>
+                                                <option value="wifi">Instant Wi-Fi Access</option>
+                                                <option value="whatsapp">WhatsApp Direct Chat</option>
+                                                <option value="vcard">vCard 3.0 Digital Card</option>
+                                                <option value="text">Plain Text / Note</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label class="input-label">Theme Palette</label>
+                                            <div class="color-presets-row">
+                                                <div class="color-swatch active" style="background:#6366f1;" data-color="#6366f1" title="Electric Indigo"></div>
+                                                <div class="color-swatch" style="background:#10b981;" data-color="#10b981" title="Emerald Green"></div>
+                                                <div class="color-swatch" style="background:#f97316;" data-color="#f97316" title="Flame Sunset"></div>
+                                                <div class="color-swatch" style="background:#0f172a;" data-color="#0f172a" title="Midnight Black"></div>
+                                                <div class="color-swatch" style="background:#e11d48;" data-color="#e11d48" title="Vivid Rose"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-label" for="qrTextInput">Payload Data / Destination</label>
+                                        <input type="text" id="qrTextInput" class="input-field" value="https://nestmate.tools" placeholder="Enter target URL or text payload...">
+                                    </div>
+
+                                    <!-- Live QR Visual Canvas Container -->
+                                    <div class="qr-preview-wrapper">
+                                        <div class="qr-canvas-holder">
+                                            <canvas id="qrLiveCanvas"></canvas>
+                                        </div>
+                                        <div class="wcag-indicator" id="qrContrastBadge">
+                                            <span>●</span>
+                                            <span>WCAG AAA Compliant (Contrast 12.4:1 - Highly Scannable)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Download Actions -->
+                                    <div style="display:flex; gap:0.5rem;">
+                                        <button type="button" class="btn-primary" id="downloadQrPngBtn" style="flex:1; justify-content:center; padding:0.65rem 1rem; font-size:0.86rem;">
+                                            <span>Export Ultra-HD PNG</span>
+                                        </button>
+                                        <button type="button" class="btn-secondary" id="downloadQrSvgBtn" style="flex:1; justify-content:center; padding:0.65rem 1rem; font-size:0.86rem;">
+                                            <span>Export Vector SVG</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 3: OMNICALC -->
+                <article class="product-card omnicalc" id="omniCalcCard">
+                    <div class="product-layout">
+                        <!-- Left Info Column -->
+                        <div class="product-info">
+                            <div class="badge-row">
+                                <span class="product-category-badge badge-amber">ALL-IN-ONE COMPUTATIONAL SUITE</span>
+                                <span class="status-badge-free">100% Free • No Sign-Up</span>
+                            </div>
+
+                            <h2 class="product-title">
+                                <span class="gradient-calc">OmniCalc</span>
+                            </h2>
+                            <p class="product-tagline">
+                                All-in-One Online Calculator Platform & Precision Computational Suite
+                            </p>
+
+                            <p class="product-description-text">
+                                Built for students, professionals, businesses, and everyday users to solve complex financial, mathematical, health, and conversion problems in seconds without registering an account. It features an automated precision calculation engine powering 78+ verified tools across 12 major categories—spanning loan EMI & amortization schedules, GST & salary breakdowns, construction estimation, fitness metrics, unit conversions, and live ECB-backed currency exchange rates—alongside dynamic visual charts, detailed amortization tables, and instant keyboard search (⌘K). Everything works 100% client-side directly in your browser with zero server data tracking and private on-device persistence, allowing you to instantly evaluate formulas, maintain calculation history, and bookmark favorite tools with zero paywalls, latency, or sign-ups.
+                            </p>
+
+                            <!-- Highlights Checkpoints -->
+                            <div class="product-features-grid">
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>78+ Specialized Tools:</strong> Across 12 major mathematical & financial domains.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Amortization Schedules:</strong> Full monthly breakdown curves & payment projections.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>Live Visual Charts:</strong> Dynamic interactive canvas visualization of ratios.</span>
+                                </div>
+                                <div class="feature-point">
+                                    <div class="feature-check-icon">✓</div>
+                                    <span><strong>⌘K Keyboard Command:</strong> Instant search, formula history & zero latency execution.</span>
+                                </div>
+                            </div>
+
+                            <!-- Spec Tags Cloud -->
+                            <div class="spec-tags-cloud">
+                                <span class="spec-pill">78+ Verified Tools</span>
+                                <span class="spec-pill">12 Domains</span>
+                                <span class="spec-pill">Loan EMI Amortization</span>
+                                <span class="spec-pill">ECB Currency Rates</span>
+                                <span class="spec-pill">Dynamic Charts</span>
+                                <span class="spec-pill">Zero Server Latency</span>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="product-actions">
+                                <button type="button" class="btn-primary" onclick="document.getElementById('cmdSearchBtn').click()">
+                                    <span>Explore All 78+ Tools</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn-secondary" onclick="openProductSpecModal('omnicalc')">
+                                    <span>Technical Specs</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right Interactive Sandbox Column -->
+                        <div class="sandbox-column">
+                            <div class="sandbox-card">
+                                <div class="sandbox-header">
+                                    <div class="sandbox-title-wrap">
+                                        <span class="sandbox-live-dot"></span>
+                                        <span>Interactive Computational Sandbox</span>
+                                    </div>
+                                    <span style="font-size:0.75rem; color:var(--brand-amber); font-weight:700;">PRECISION ENGINE</span>
+                                </div>
+
+                                <div class="sandbox-body">
+                                    <!-- Tab Selector -->
+                                    <nav class="calc-nav-tabs" aria-label="Calculation Mode">
+                                        <button type="button" class="calc-tab-btn active" data-tab="emi">Loan EMI & Mortgage</button>
+                                        <button type="button" class="calc-tab-btn" data-tab="currency">Currency Exchange</button>
+                                        <button type="button" class="calc-tab-btn" data-tab="unit">Quick Units</button>
+                                    </nav>
+
+                                    <!-- PANE 1: EMI Calculator -->
+                                    <div class="calc-tab-pane" id="calcPane_emi">
+                                        <div style="display:flex; flex-direction:column; gap:1.1rem;">
+                                            <!-- Amount Slider -->
+                                            <div class="range-slider-group">
+                                                <div class="slider-header">
+                                                    <span class="input-label" style="margin:0;">Principal Loan Amount</span>
+                                                    <span class="slider-val" id="emiAmountLabel">$250,000</span>
+                                                </div>
+                                                <input type="range" id="emiAmount" min="5000" max="1000000" step="5000" value="250000">
+                                            </div>
+
+                                            <!-- Rate Slider -->
+                                            <div class="range-slider-group">
+                                                <div class="slider-header">
+                                                    <span class="input-label" style="margin:0;">Interest Rate (p.a.)</span>
+                                                    <span class="slider-val" id="emiRateLabel">7.5%</span>
+                                                </div>
+                                                <input type="range" id="emiRate" min="1.0" max="20.0" step="0.1" value="7.5">
+                                            </div>
+
+                                            <!-- Tenure Slider -->
+                                            <div class="range-slider-group">
+                                                <div class="slider-header">
+                                                    <span class="input-label" style="margin:0;">Loan Tenure (Years)</span>
+                                                    <span class="slider-val" id="emiTenureLabel">15 Yrs</span>
+                                                </div>
+                                                <input type="range" id="emiTenure" min="1" max="30" step="1" value="15">
+                                            </div>
+
+                                            <!-- Results Grid & Donut Chart -->
+                                            <div style="display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:center;">
+                                                <div class="calc-result-grid" style="grid-template-columns:1fr 1fr;">
+                                                    <div class="calc-stat-card">
+                                                        <div class="stat-label">Monthly EMI Payment</div>
+                                                        <div class="stat-num highlight" id="emiMonthlyVal">$2,316/mo</div>
+                                                    </div>
+                                                    <div class="calc-stat-card">
+                                                        <div class="stat-label">Total Interest</div>
+                                                        <div class="stat-num" id="emiTotalInterestVal">$166,938</div>
+                                                    </div>
+                                                    <div class="calc-stat-card" style="grid-column: span 2;">
+                                                        <div class="stat-label">Total Payment (Principal + Interest)</div>
+                                                        <div class="stat-num" id="emiTotalPaymentVal" style="color:var(--brand-emerald);">$416,938</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="chart-visual-box">
+                                                    <canvas id="emiDonutCanvas"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PANE 2: Currency Exchange -->
+                                    <div class="calc-tab-pane" id="calcPane_currency" style="display:none;">
+                                        <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                                            <div>
+                                                <label class="input-label" for="curAmount">Conversion Amount</label>
+                                                <input type="number" id="curAmount" class="input-field" value="1000">
+                                            </div>
+                                            <div class="input-row" style="align-items:flex-end;">
+                                                <div>
+                                                    <label class="input-label" for="curFrom">From</label>
+                                                    <select id="curFrom" class="select-field">
+                                                        <option value="USD" selected>USD ($)</option>
+                                                        <option value="EUR">EUR (€)</option>
+                                                        <option value="GBP">GBP (£)</option>
+                                                        <option value="INR">INR (₹)</option>
+                                                        <option value="JPY">JPY (¥)</option>
+                                                        <option value="CAD">CAD ($)</option>
+                                                    </select>
+                                                </div>
+                                                <div style="display:flex; justify-content:center;">
+                                                    <button type="button" id="curSwapBtn" class="btn-secondary" style="padding:0.65rem; border-radius:50%;" title="Swap currencies">⇄</button>
+                                                </div>
+                                                <div>
+                                                    <label class="input-label" for="curTo">To</label>
+                                                    <select id="curTo" class="select-field">
+                                                        <option value="EUR" selected>EUR (€)</option>
+                                                        <option value="USD">USD ($)</option>
+                                                        <option value="GBP">GBP (£)</option>
+                                                        <option value="INR">INR (₹)</option>
+                                                        <option value="JPY">JPY (¥)</option>
+                                                        <option value="CAD">CAD ($)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="calc-stat-card" style="text-align:center; padding:1.25rem;">
+                                                <div class="stat-label">Calculated Exchange Output</div>
+                                                <div class="stat-num highlight" id="curResult" style="font-size:1.6rem;">925.93 EUR</div>
+                                                <div style="font-size:0.75rem; color:var(--text-dim); margin-top:0.35rem;">Live ECB cross-rate valuation model • 0ms latency</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PANE 3: Unit Converter -->
+                                    <div class="calc-tab-pane" id="calcPane_unit" style="display:none;">
+                                        <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                                            <div class="input-row">
+                                                <div>
+                                                    <label class="input-label" for="unitType">Conversion Category</label>
+                                                    <select id="unitType" class="select-field">
+                                                        <option value="storage">Digital Storage (MB → GB)</option>
+                                                        <option value="length">Distance (km → Miles)</option>
+                                                        <option value="weight">Mass & Weight (kg → lbs)</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label class="input-label" for="unitVal">Input Value</label>
+                                                    <input type="number" id="unitVal" class="input-field" value="2048">
+                                                </div>
+                                            </div>
+
+                                            <div class="calc-stat-card" style="text-align:center; padding:1.25rem;">
+                                                <div class="stat-label">Calculated Equivalent</div>
+                                                <div class="stat-num highlight" id="unitResult" style="font-size:1.35rem;">2048 MB = 2.00 GB (0.0020 TB)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Google Ad Placement Slot 2: Mid-Page Responsive Banner -->
+            <div class="ad-container">
+                <span class="ad-label">Advertisement / Sponsor</span>
+                <div class="ad-banner-slot">
+                    <!-- Paste your Google Ad Unit snippet here:
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <div class="ad-placeholder-text">
+                        <span>📢 Google AdSense Slot 2 (Responsive Billboard: 970x250 / 728x90 / 300x250)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Comparison Matrix -->
+            <section class="comparison-section" id="comparison">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-pill">THE NESTMATE STANDARD</div>
+                        <h2 class="section-title">Why Traditional Utility Websites Fail You</h2>
+                        <p class="section-subtitle">
+                            Most online quotation generators, QR builders, and calculators lure you in with "free" promises, only to lock your downloads behind paywalls or sell your data. Here is how Nestmate sets a new ethical standard:
+                        </p>
+                    </div>
+
+                    <div class="matrix-table-wrap">
+                        <table class="matrix-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature & Quality Standard</th>
+                                    <th class="col-nestmate">Nestmate Suite (QuoteCraft, QR Studio, OmniCalc)</th>
+                                    <th>Typical Online Utility Sites</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Account Requirement</strong></td>
+                                    <td class="col-nestmate">
+                                        <span class="badge-tag-good">✓ Zero Accounts Required</span> (Instant in-browser access)
+                                    </td>
+                                    <td>
+                                        <span class="badge-tag-bad">✕ Mandatory Sign-up</span> (Requires email, password & marketing opt-in)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Data Privacy & Security</strong></td>
+                                    <td class="col-nestmate">
+                                        <span class="badge-tag-good">✓ 100% Client-Side In-Memory</span> (0 bytes ever leave your device)
+                                    </td>
+                                    <td>
+                                        <span class="badge-tag-bad">✕ Remote Cloud Processing</span> (Financial & contact data stored on servers)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Export Watermarks</strong></td>
+                                    <td class="col-nestmate">
+                                        <span class="badge-tag-good">✓ Zero Watermarks Ever</span> (Clean client-ready documents)
+                                    </td>
+                                    <td>
+                                        <span class="badge-tag-bad">✕ Obtrusive Watermarks</span> (Unless you upgrade to a paid tier)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pricing & Subscriptions</strong></td>
+                                    <td class="col-nestmate">
+                                        <span class="badge-tag-good">✓ 100% Free Forever</span> (No hidden limits, no credit cards)
+                                    </td>
+                                    <td>
+                                        <span class="badge-tag-bad">✕ Paywalled Trials</span> ($15 to $35/month recurring subscriptions)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Barcode Expiration</strong></td>
+                                    <td class="col-nestmate">
+                                        <span class="badge-tag-good">✓ Permanent & Non-Expiring</span> (Direct payload standards)
+                                    </td>
+                                    <td>
+                                        <span class="badge-tag-bad">✕ Broken Redirect Links</span> (Barcodes expire after 14 days unless paid)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Offline Execution</strong></td>
+                                    <td class="col-nestmate">
+                                        <span class="badge-tag-good">✓ Full Offline Functionality</span> (Runs in browser RAM even without internet)
+                                    </td>
+                                    <td>
+                                        <span class="badge-tag-bad">✕ Completely Broken Offline</span> (Depends on continuous cloud APIs)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Group Manifesto & Principles -->
+            <section class="manifesto-section" id="manifesto">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-pill">OUR CORE VISION</div>
+                        <h2 class="section-title">The Open Utility Manifesto</h2>
+                        <p class="section-subtitle">
+                            Everyday utility tools should be as friction-free and accessible as a pencil. Here is the pledge that governs every tool built under the Nestmate Group umbrella:
+                        </p>
+                    </div>
+
+                    <div class="manifesto-grid">
+                        <div class="manifesto-card">
+                            <div class="manifesto-num">01</div>
+                            <h3 class="manifesto-card-title">Zero Friction Access</h3>
+                            <p class="manifesto-card-desc">
+                                We believe nobody should have to surrender their email address, verify a phone number, or remember a password just to compute an EMI, generate an invoice, or make a Wi-Fi barcode.
+                            </p>
+                        </div>
+
+                        <div class="manifesto-card">
+                            <div class="manifesto-num">02</div>
+                            <h3 class="manifesto-card-title">Privacy by Physics</h3>
+                            <p class="manifesto-card-desc">
+                                The most secure database is the one that does not exist. We do not track your invoices, your client lists, or your calculations. Your data resides exclusively in your browser RAM and local device cache.
+                            </p>
+                        </div>
+
+                        <div class="manifesto-card">
+                            <div class="manifesto-num">03</div>
+                            <h3 class="manifesto-card-title">Commercial-Grade Precision</h3>
+                            <p class="manifesto-card-desc">
+                                Free does not mean compromised. Every tool is engineered to commercial standards: multi-page PDF rendering, vector SVG scalability, and strict mathematical precision down to sub-cent rounding.
+                            </p>
+                        </div>
+
+                        <div class="manifesto-card">
+                            <div class="manifesto-num">04</div>
+                            <h3 class="manifesto-card-title">No Bait & Switch</h3>
+                            <p class="manifesto-card-desc">
+                                We will never allow "3 free exports, then $19/mo". Everything released under Nestmate is 100% free forever, without artificial throttles, banner traps, or predatory trial expiration dates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Roadmap & Suggest a Tool -->
+            <section class="roadmap-section" id="roadmapSection">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-pill">FUTURE DIRECTION</div>
+                        <h2 class="section-title">What We Are Building Next</h2>
+                        <p class="section-subtitle">
+                            Our mission is to create a comprehensive constellation of real-life, daily-use tools that remain 100% free with zero logins. Here is our active pipeline and community backlog:
+                        </p>
+                    </div>
+
+                    <div class="roadmap-grid">
+                        <!-- Pipeline List -->
+                        <div class="pipeline-list">
+                            <div class="pipeline-item" style="border-left: 3px solid var(--brand-emerald);">
+                                <div class="pipeline-info">
+                                    <div class="pipeline-icon">📇</div>
+                                    <div>
+                                        <div class="pipeline-title">Business Card Generator — Digital & Print Studio</div>
+                                        <div class="pipeline-desc">Create professional, double-sided business cards with scannable QR codes, customizable typography, company logos, and high-resolution vector PDF export. 100% free with zero sign-ups.</div>
+                                    </div>
+                                </div>
+                                <span class="pipeline-status" style="background: rgba(16, 185, 129, 0.15); color: var(--brand-emerald); border-color: rgba(16, 185, 129, 0.3);">IN PROGRESS</span>
+                            </div>
+
+                            <div class="pipeline-item" style="border-left: 3px solid var(--brand-indigo);">
+                                <div class="pipeline-info">
+                                    <div class="pipeline-icon">🖼️</div>
+                                    <div>
+                                        <div class="pipeline-title">Images to PDF Converter — Fast & Private</div>
+                                        <div class="pipeline-desc">Instantly convert and merge single or multiple JPG, PNG, WEBP, and HEIC photos into clean, compressed, multi-page PDF documents entirely in-browser. Zero server uploads.</div>
+                                    </div>
+                                </div>
+                                <div style="display:flex; align-items:center; gap:0.6rem;">
+                                    <span class="pipeline-status">PLANNED</span>
+                                    <button type="button" class="btn-secondary upvote-btn" style="padding:0.35rem 0.75rem; font-size:0.78rem; border-radius:var(--radius-full);">
+                                        <span>▲ Upvote</span>
+                                        <span class="upvote-count" style="font-weight:700;">0</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="pipeline-item">
+                                <div class="pipeline-info">
+                                    <div class="pipeline-icon">🗂️</div>
+                                    <div>
+                                        <div class="pipeline-title">DocuShield — In-Browser PDF Suite</div>
+                                        <div class="pipeline-desc">Merge, split, rotate, and compress PDF documents with 100% local WebAssembly processing. Zero uploads.</div>
+                                    </div>
+                                </div>
+                                <div style="display:flex; align-items:center; gap:0.6rem;">
+                                    <span class="pipeline-status">PLANNED</span>
+                                    <button type="button" class="btn-secondary upvote-btn" style="padding:0.35rem 0.75rem; font-size:0.78rem; border-radius:var(--radius-full);">
+                                        <span>▲ Upvote</span>
+                                        <span class="upvote-count" style="font-weight:700;">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Suggestion Form Box -->
+                        <aside class="suggest-box">
+                            <div>
+                                <h3 class="suggest-box-title">Suggest a Free Daily Tool</h3>
+                                <p class="suggest-box-subtitle">Have a tedious daily task you wish had a 100% free, zero-login tool? Tell us and our engineering team will build it!</p>
+                            </div>
+
+                            <!-- Direct Bug Report & Support Callout -->
+                            <div style="background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: var(--radius-sm); padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.84rem; color: var(--text-main);">
+                                    <span>🐛</span>
+                                    <span>Found a bug or need support?</span>
+                                </div>
+                                <a href="mailto:nestmategroup@gmail.com?subject=Nestmate%20Bug%20Report%20/%20Support" style="color: var(--brand-indigo); font-weight: 700; font-size: 0.84rem; text-decoration: none;">
+                                    nestmategroup@gmail.com →
+                                </a>
+                            </div>
+
+                            <form id="suggestToolForm">
+                                <div style="display:flex; flex-direction:column; gap:1rem;">
+                                    <div>
+                                        <label class="input-label" for="suggestToolName">Tool Name / Concept</label>
+                                        <input type="text" id="suggestToolName" class="input-field" placeholder="e.g., Image Background Remover without cloud" required>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-label" for="suggestToolCategory">Domain / Category</label>
+                                        <select id="suggestToolCategory" class="select-field">
+                                            <option value="Productivity">Productivity & Documents</option>
+                                            <option value="Media">Media, Photos & Audio</option>
+                                            <option value="Developer">Developer & Coding Tools</option>
+                                            <option value="Finance">Personal Finance & Business</option>
+                                            <option value="Student">Education & Students</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label class="input-label" for="suggestToolDesc">Why would this be useful in daily life?</label>
+                                        <textarea id="suggestToolDesc" class="input-field" rows="3" placeholder="Explain how you would use this daily and what frustrating paywalls you want eliminated..." required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn-primary" style="justify-content:center; width:100%;">
+                                        <span>Submit Tool Suggestion</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section" id="faq">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="section-pill">FREQUENTLY ASKED QUESTIONS</div>
+                        <h2 class="section-title">Everything You Need to Know</h2>
+                        <p class="section-subtitle">
+                            Clear answers about our zero-login architecture, data privacy, and commercial licensing.
+                        </p>
+                    </div>
+
+                    <div class="faq-list">
+                        <div class="faq-card open">
+                            <button type="button" class="faq-question">
+                                <span>Is Nestmate really 100% free with no hidden charges or caps?</span>
+                                <span class="faq-icon-arrow">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                Yes, completely. There are no subscription tiers, no "export credits", and no credit card gates. All products (QuoteCraft, QR Studio, OmniCalc) are designed to execute client-side inside your browser, which keeps server infrastructure costs minimal and allows us to provide this suite freely to the global community.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button type="button" class="faq-question">
+                                <span>Where is my commercial data stored when using QuoteCraft or QR Studio?</span>
+                                <span class="faq-icon-arrow">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                Your data is stored strictly in your own browser's memory and local device persistence (IndexedDB / LocalStorage). We do not operate remote databases that record your quotations, your clients, your Wi-Fi passwords, or your calculation history. If you clear your browser cookies and storage, your local drafts are wiped on your own device.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button type="button" class="faq-question">
+                                <span>Do barcodes generated by QR Studio ever expire?</span>
+                                <span class="faq-icon-arrow">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                Never. Many predatory QR generator sites encode their own redirect URLs that stop working unless you pay them a monthly subscription. QR Studio embeds the raw payload directly (such as your direct URL, vCard, or Wi-Fi string), creating a permanent barcode that functions forever.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button type="button" class="faq-question">
+                                <span>Can I use QuoteCraft quotations for official legal and business proposals?</span>
+                                <span class="faq-icon-arrow">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                Absolutely. QuoteCraft generates high-resolution, unwatermarked PDF documents adhering to commercial invoicing standards, including line-item breakdowns, tax jurisdictions (GST/VAT), payment milestones, custom terms, and digital verification seals.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button type="button" class="faq-question">
+                                <span>Will the tools work when I do not have an internet connection?</span>
+                                <span class="faq-icon-arrow">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                Yes! Because all core algorithms (the mathematical engine in OmniCalc, the QR generator matrix in QR Studio, and the quotation engine in QuoteCraft) run purely via client-side JavaScript, they continue working seamlessly offline once loaded in your browser.
+                            </div>
+                        </div>
+
+                        <div class="faq-card">
+                            <button type="button" class="faq-question">
+                                <span>How do I report a bug, suggest features, or get technical support?</span>
+                                <span class="faq-icon-arrow">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                You can send bug reports, feedback, and support inquiries directly to our team at <a href="mailto:nestmategroup@gmail.com?subject=Nestmate%20Bug%20Report%20/%20Support" style="color:var(--brand-indigo); font-weight:700;">nestmategroup@gmail.com</a>. We review and triage every email to ensure all tools maintain high stability.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div>
+                        <div class="brand-link" style="margin-bottom:0.75rem;">
+                            <img src="assets/favicon.jpg" alt="Nestmate Logo" class="brand-logo-img" width="36" height="36">
+                            <span class="brand-name">Nestmate</span>
+                        </div>
+                        <p class="footer-brand-desc">
+                            An independent group creating high-precision daily utility web tools with 100% free access, zero accounts, and uncompromising client-side privacy.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-col-title">Flagship Suite</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="#quoteCraftCard">QuoteCraft (Proposals)</a></li>
+                            <li><a href="#qrStudioCard">QR Studio (Barcodes)</a></li>
+                            <li><a href="#omniCalcCard">OmniCalc (78+ Calculators)</a></li>
+                            <li><a href="#roadmapSection">Upcoming Tools</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-col-title">Architecture</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="javascript:void(0)" onclick="openProductSpecModal('quotecraft')">Precision Math Engine</a></li>
+                            <li><a href="javascript:void(0)" onclick="openProductSpecModal('qrstudio')">Vector SVG & WCAG Specs</a></li>
+                            <li><a href="javascript:void(0)" onclick="openProductSpecModal('omnicalc')">Computational Algorithms</a></li>
+                            <li><a href="#comparison">Security & Privacy Model</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-col-title">Group & Support</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="#manifesto">Open Utility Manifesto</a></li>
+                            <li><a href="javascript:void(0)" onclick="openPrivacyPolicyModal()">Privacy & Ad Policy</a></li>
+                            <li><a href="mailto:nestmategroup@gmail.com?subject=Nestmate%20Bug%20Report%20/%20Support" style="color:var(--text-accent); font-weight:600;">Report a Bug / Support</a></li>
+                            <li><a href="mailto:nestmategroup@gmail.com">nestmategroup@gmail.com</a></li>
+                            <li><a href="#roadmapSection">Suggest a Daily Tool</a></li>
+                            <li><a href="#faq">Frequently Asked Questions</a></li>
+                            <li><a href="#hero">Back to Top ↑</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom" style="flex-direction:column; gap:0.6rem;">
+                    <div style="text-align: center; width: 100%; font-size: 0.88rem;">
+                        <a href="mailto:nestmategroup@gmail.com?subject=Nestmate%20Bug%20Report%20/%20Support" style="color: var(--text-accent); text-decoration: none; display: inline-flex; align-items: center; gap: 0.45rem;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>For bug reports, technical inquiries & support: <strong>nestmategroup@gmail.com</strong></span>
+                        </a>
+                    </div>
+                    <div style="text-align: center; width: 100%; color: var(--text-dim); font-size: 0.82rem;">
+                        © 2026 Nestmate Group. 100% Free & Open Utility Ecosystem. Zero Tracking Cookies.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Command Palette Modal (⌘K) -->
+    <div class="modal-overlay" id="cmdPaletteModal" role="dialog" aria-modal="true" aria-label="Command Palette">
+        <div class="cmd-modal-box">
+            <div class="cmd-modal-input-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-dim);">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="cmdInput" class="cmd-modal-input" placeholder="Type a tool name, formula, or template... (e.g., EMI, QR, GST, Quote)">
+                <kbd class="kbd-shortcut">ESC</kbd>
+            </div>
+            <ul class="cmd-results-list" id="cmdResultsList">
+                <!-- Search results injected by JS -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Technical Specifications Modal -->
+    <div class="modal-overlay" id="specModal" role="dialog" aria-modal="true" aria-label="Technical Specifications">
+        <div class="spec-modal-box">
+            <button type="button" class="modal-close-btn" id="specModalClose" aria-label="Close modal">✕</button>
+            <div id="specModalContent">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- QuoteCraft Proposal Document Preview Modal -->
+    <div class="modal-overlay" id="quotePreviewModal" role="dialog" aria-modal="true" aria-label="Proposal Preview">
+        <div class="spec-modal-box" style="max-width:740px;">
+            <button type="button" class="modal-close-btn" id="quotePreviewModalClose" aria-label="Close preview">✕</button>
+            <div id="quotePreviewDocument">
+                <!-- Dynamic proposal layout rendered here -->
+            </div>
+            <div style="margin-top:1.5rem; display:flex; justify-content:flex-end; gap:0.75rem;">
+                <button type="button" class="btn-secondary" onclick="window.print()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    <span>Print / Save as PDF</span>
+                </button>
+                <button type="button" class="btn-primary" onclick="document.getElementById('quotePreviewModal').classList.remove('active'); showToast('Proposal saved locally in browser!');">
+                    <span>Done</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy & Advertising Policy Modal (Required for Google AdSense Approval) -->
+    <div class="modal-overlay" id="privacyPolicyModal" role="dialog" aria-modal="true" aria-label="Privacy and Advertising Policy">
+        <div class="spec-modal-box">
+            <button type="button" class="modal-close-btn" id="privacyPolicyClose" aria-label="Close modal">✕</button>
+            <div>
+                <span class="badge-emerald" style="font-size:0.75rem; font-weight:700; text-transform:uppercase; padding:0.2rem 0.6rem; border-radius:var(--radius-sm);">Legal & Transparency</span>
+                <h2 style="font-size:1.75rem; font-weight:800; margin:0.6rem 0 1rem; letter-spacing:-0.03em;">Privacy & Advertising Policy</h2>
+                
+                <div style="color:var(--text-muted); font-size:0.92rem; line-height:1.65; display:flex; flex-direction:column; gap:1.2rem;">
+                    <div>
+                        <h4 style="color:var(--text-main); font-weight:700; margin-bottom:0.3rem;">1. Client-Side Utility Privacy</h4>
+                        <p>All core computational and generation tools on Nestmate (including QuoteCraft, QR Studio, and OmniCalc) operate entirely client-side inside your web browser. We do not store, collect, or transmit your calculation records, quotations, client names, or barcodes to any external database.</p>
+                    </div>
+
+                    <div>
+                        <h4 style="color:var(--text-main); font-weight:700; margin-bottom:0.3rem;">2. Third-Party Advertising & Cookies (Google AdSense)</h4>
+                        <p>We use third-party advertising companies, including Google AdSense, to serve ads when you visit our website. Google uses cookies (including the DoubleClick cookie) to serve ads based on prior visits to our website or other sites on the internet.</p>
+                        <p style="margin-top:0.4rem;">You may opt out of personalized advertising by visiting Google's <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" style="color:var(--brand-indigo); font-weight:600;">Ad Settings</a> or via <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" style="color:var(--brand-indigo); font-weight:600;">aboutads.info</a>.</p>
+                    </div>
+
+                    <div>
+                        <h4 style="color:var(--text-main); font-weight:700; margin-bottom:0.3rem;">3. Data Protection & GDPR / CCPA Compliance</h4>
+                        <p>Nestmate respects global privacy standards. Because our tools function locally on-device, zero sensitive business or personal documents are retained on our servers. For any inquiries, reach our team at <a href="mailto:nestmategroup@gmail.com" style="color:var(--brand-indigo); font-weight:600;">nestmategroup@gmail.com</a>.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border-subtle); display:flex; justify-content:flex-end;">
+                    <button type="button" class="btn-primary" onclick="document.getElementById('privacyPolicyModal').classList.remove('active')">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
