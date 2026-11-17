@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Studio — Free Custom QR Code Generator & Barcode Suite | Nestmate</title>
+    <meta name="description" content="Generate custom QR codes and barcodes for Wi-Fi, vCard, WhatsApp, URL, and cryptocurrency. High-resolution PNG and SVG exports with zero watermarks.">
+    <link rel="canonical" href="https://www.nestmategroup.online/qr-studio.html">
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google AdSense Verification Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6904361134310340" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="ambient-bg">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+    </div>
+    <div class="grid-pattern"></div>
+
+    <div class="content-wrapper">
+        <aside class="announcement-bar">
+            <span class="announcement-badge">UTILITY GUIDE</span>
+            <span>📱 QR Studio Documentation: High-Precision 2D Barcode & Matrix Generation</span>
+        </aside>
+
+        <header class="site-header">
+            <div class="container nav-row">
+                <a href="index.html" class="brand-link" aria-label="Nestmate Home">
+                    <img src="assets/favicon.jpg" alt="Nestmate Logo" class="brand-logo-img" width="38" height="38">
+                    <div class="brand-name">Nestmate</div>
+                </a>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="index.html#products">Products</a></li>
+                        <li class="nav-item"><a href="about.html">About Us</a></li>
+                        <li class="nav-item"><a href="privacy.html">Privacy</a></li>
+                        <li class="nav-item"><a href="terms.html">Terms</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode"></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-page-wrapper">
+            <div class="container" style="max-width: 900px;">
+                <div class="content-page-header">
+                    <span class="hero-pill-badge" style="background:rgba(99,102,241,0.15); color:var(--brand-indigo); border:1px solid rgba(99,102,241,0.3); border-radius:9999px; padding:0.25rem 0.85rem; font-size:0.78rem; font-weight:700; text-transform:uppercase;">Product Overview & Guide</span>
+                    <h1 class="content-page-title">QR Studio: Custom Barcode & Matrix Studio</h1>
+                    <p class="content-page-meta">A technical guide to standards-compliant ISO/IEC 18004 QR generation, error correction, and vector printing.</p>
+                </div>
+
+                <article class="legal-article">
+                    <div style="margin-bottom:2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                        <div>
+                            <strong>Standard:</strong> ISO/IEC 18004 Compliant Matrix Engine<br>
+                            <strong>Output Formats:</strong> Crisp SVG Vector & PNG up to 2048×2048px
+                        </div>
+                        <a href="index.html#qrStudioCard" class="btn-primary" style="padding:0.75rem 1.4rem;">
+                            <span>Launch QR Studio Live →</span>
+                        </a>
+                    </div>
+
+                    <h2>What is QR Studio?</h2>
+                    <p>QR Studio is an online barcode and Quick Response (QR) matrix generator designed by Nestmate Group. While traditional generator websites redirect users through intermediate tracking URLs or expire codes after 14 days, QR Studio creates <strong>100% static, direct, and unexpirable QR codes</strong> directly inside your client browser.</p>
+                    <p>Static QR codes mean the encoded data (such as your Wi-Fi credentials, business card details, or web link) is written permanently into the barcode geometry itself. There is no middleman server that can shut down, expire your link, or track your users.</p>
+
+                    <h2>10 Supported Code Schemas</h2>
+                    <p>QR Studio natively formats payloads conforming to international standards:</p>
+                    <ul>
+                        <li><strong>Standard Web URLs (HTTP/HTTPS):</strong> Direct navigation for company websites, portfolios, and documentation.</li>
+                        <li><strong>Wi-Fi Network Access:</strong> Auto-connects smartphones to WPA/WPA2/WPA3 or WEP wireless networks without typing lengthy passwords.</li>
+                        <li><strong>vCard 3.0 Electronic Business Cards:</strong> One-scan contact import containing name, organization, phone number, email, and website.</li>
+                        <li><strong>WhatsApp Direct Chat:</strong> Launches a pre-filled WhatsApp conversation with a specific mobile number and optional message.</li>
+                        <li><strong>Electronic Mail (mailto):</strong> Generates formatted emails with predefined recipient, subject header, and message body.</li>
+                        <li><strong>SMS Messages:</strong> Formatted SMS payloads ready to send to specific phone numbers.</li>
+                        <li><strong>Cryptocurrency Addresses:</strong> Bitcoin (BTC), Ethereum (ETH), and Solana (SOL) payment addresses with optional amount parameters.</li>
+                        <li><strong>UPI Instant Payments:</strong> Unified Payments Interface strings for Indian digital banking and merchant QR scanning.</li>
+                        <li><strong>Calendar Events (iCalendar):</strong> Encodes meeting schedules, location details, and appointment times directly into native calendar apps.</li>
+                        <li><strong>Plain Text:</strong> Versatile text encoding for serial numbers, product SKUs, and inventory tags.</li>
+                    </ul>
+
+                    <h2>Understanding Error Correction (Reed-Solomon)</h2>
+                    <p>QR codes utilize the Reed-Solomon algebraic error correction algorithm, allowing them to remain readable even if partially damaged, dirty, or obscured by a central company logo:</p>
+                    <ul>
+                        <li><strong>Level L (Low):</strong> Restores approximately 7% of lost data. Best for clean digital screen displays with minimal complex geometry.</li>
+                        <li><strong>Level M (Medium):</strong> Restores approximately 15% of lost data. Standard general-purpose balance for business cards.</li>
+                        <li><strong>Level Q (Quartile):</strong> Restores approximately 25% of lost data. Suitable for marketing flyers subject to wear.</li>
+                        <li><strong>Level H (High):</strong> Restores up to 30% of lost data. Required whenever embedding a custom logo in the center or printing on outdoor physical surfaces.</li>
+                    </ul>
+
+                    <h2>WCAG Contrast & Print Guidelines</h2>
+                    <p>For a barcode scanner or smartphone camera to register a QR matrix reliably, adequate photometric contrast between the foreground modules and background surface is mandatory:</p>
+                    <ul>
+                        <li><strong>Contrast Ratio:</strong> Maintain a minimum contrast ratio of 4.5:1 (conforming to WCAG AA guidelines). QR Studio includes a built-in contrast checker that alerts you if your chosen color scheme is too faint for reliable scanning.</li>
+                        <li><strong>Quiet Zone:</strong> Always preserve a margin of at least 4 module widths around the outer perimeter of the QR code when placing it on packaging or print media.</li>
+                    </ul>
+
+                    <div style="margin-top:2.5rem; text-align:center;">
+                        <a href="index.html#qrStudioCard" class="btn-primary" style="padding:0.9rem 2rem; display:inline-flex;">
+                            <span>Create Your Free QR Code Now →</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-brand">
+                            <img src="assets/favicon.jpg" alt="Nestmate Logo" width="30" height="30" style="border-radius:6px;">
+                            <span>Nestmate Group</span>
+                        </div>
+                        <p class="footer-desc">
+                            High-precision daily utility web tools with 100% free access, zero accounts, and uncompromising client-side privacy.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-col-title">Navigation</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="index.html#products">All Tools</a></li>
+                            <li><a href="quotecraft.html">QuoteCraft Guide</a></li>
+                            <li><a href="qr-studio.html" style="color:var(--brand-indigo); font-weight:700;">QR Studio Guide</a></li>
+                            <li><a href="omnicalc.html">OmniCalc Guide</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-col-title">Company & Legal</h4>
+                        <ul class="footer-link-list">
+                            <li><a href="about.html">About Nestmate</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div style="text-align: center; width: 100%; color: var(--text-dim); font-size: 0.82rem;">
+                        © 2026 Nestmate Group. 100% Free & Open Utility Ecosystem. Zero Tracking Cookies.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
