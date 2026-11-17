@@ -80,6 +80,20 @@
     <link rel="apple-touch-icon" href="assets/favicon.jpg">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Subdomain Route Handler (quotecraft, qrstudio, omnicalc) -->
+    <script>
+        (function() {
+            var host = window.location.hostname.toLowerCase();
+            if (host.indexOf('quotecraft.') === 0) {
+                if (!window.location.hash) window.location.replace('https://www.nestmategroup.online/#quoteCraftCard');
+            } else if (host.indexOf('qrstudio.') === 0) {
+                if (!window.location.hash) window.location.replace('https://www.nestmategroup.online/#qrStudioCard');
+            } else if (host.indexOf('omnicalc.') === 0) {
+                if (!window.location.hash) window.location.replace('https://www.nestmategroup.online/#omniCalcCard');
+            }
+        })();
+    </script>
+
     <!-- Google AdSense Live Integration -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6904361134310340"
             crossorigin="anonymous"></script>
