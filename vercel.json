@@ -2,39 +2,36 @@
   "buildCommand": null,
   "outputDirectory": ".",
   "cleanUrls": true,
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "quotecraft.nestmategroup.online"
         }
       ],
-      "destination": "https://www.nestmategroup.online/#quoteCraftCard",
-      "permanent": false
+      "destination": "/quotecraft.html"
     },
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "qrstudio.nestmategroup.online"
         }
       ],
-      "destination": "https://www.nestmategroup.online/#qrStudioCard",
-      "permanent": false
+      "destination": "/qr-studio.html"
     },
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "omnicalc.nestmategroup.online"
         }
       ],
-      "destination": "https://www.nestmategroup.online/#omniCalcCard",
-      "permanent": false
+      "destination": "/omnicalc.html"
     }
   ]
 }
