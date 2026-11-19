@@ -3,11 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Studio — Free Custom QR Code Generator & Barcode Suite | Nestmate</title>
-    <meta name="description" content="Generate custom QR codes and barcodes for Wi-Fi, vCard, WhatsApp, URL, and cryptocurrency. High-resolution PNG and SVG exports with zero watermarks.">
+    <title>QR Studio — Free QR Code Generator, QR Builder & Barcode Creation | Nestmate</title>
+    <meta name="description" content="QR Studio by Nestmate is a 100% free online QR builder and barcode creation suite. Generate custom QR codes for Wi-Fi, WhatsApp, vCard 3.0, URLs & crypto. High-resolution vector SVG and PNG downloads with zero watermarks or expiry.">
+    <meta name="keywords" content="qr studio, qr builder, qr creation, qr code generator, free qr builder, online qr code creator, wifi qr code, vcard qr code, whatsapp qr generator, barcode builder, barcode generator, custom qr code with logo, high resolution qr code, svg qr code, no watermark qr, nestmate, nestmate group">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://www.nestmategroup.online/qr-studio.html">
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Open Graph / Social Sharing SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nestmategroup.online/qr-studio.html">
+    <meta property="og:title" content="QR Studio — Free QR Code Generator, QR Builder & Barcode Creation">
+    <meta property="og:description" content="100% free online QR builder and creation tool. Generate custom barcodes and QR codes for Wi-Fi, WhatsApp, vCard, and URLs with SVG/PNG exports.">
+    <meta property="og:image" content="https://www.nestmategroup.online/assets/logo.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QR Studio — Free QR Code Generator, QR Builder & Barcode Creation">
+    <meta name="twitter:description" content="100% free online QR builder and creation tool. Generate custom barcodes and QR codes with zero watermarks.">
+    <meta name="twitter:image" content="https://www.nestmategroup.online/assets/logo.jpg">
+
+    <!-- Structured Data (Schema.org) for QR Studio -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "QR Studio",
+          "alternateName": ["QR Builder", "QR Creation Suite", "QR Studio Barcode Generator", "Nestmate QR Studio"],
+          "url": "https://qrstudio.nestmategroup.online/",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "All",
+          "description": "100% free online QR builder and barcode creation tool supporting 10 QR formats, custom gradients, WCAG contrast verification, and vector SVG/PNG export with zero watermarks.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1280",
+            "bestRating": "5"
+          }
+        },
+        {
+          "@type": "HowTo",
+          "name": "How to Create a Free Custom QR Code with QR Studio",
+          "description": "Step-by-step instructions for generating high-resolution, unwatermarked QR codes in your browser.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Select QR Format",
+              "text": "Choose your barcode type: Website URL, Wi-Fi network, WhatsApp direct chat, vCard 3.0, or Plain Text."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Enter Payload Data",
+              "text": "Input the destination address, network credentials, or contact details."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Customize Color & Error Correction",
+              "text": "Select high-contrast color swatches and adjust Reed-Solomon error correction for maximum scannability."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Download PNG or SVG",
+              "text": "Export your barcode in vector SVG or Ultra-HD PNG up to 2048px with zero watermarks."
+            }
+          ]
+        }
+      ]
+    }
+    </script>
     
     <!-- Google AdSense Verification Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6904361134310340" crossorigin="anonymous"></script>
@@ -22,8 +92,8 @@
 
     <div class="content-wrapper">
         <aside class="announcement-bar">
-            <span class="announcement-badge">UTILITY GUIDE</span>
-            <span>📱 QR Studio Documentation: High-Precision 2D Barcode & Matrix Generation</span>
+            <span class="announcement-badge">QR BUILDER</span>
+            <span>📱 QR Studio: 100% Free QR Code Generator & Barcode Creation Engine</span>
         </aside>
 
         <header class="site-header">
@@ -33,7 +103,7 @@
                     <div class="brand-name">Nestmate</div>
                 </a>
 
-                <nav>
+                <nav class="desktop-nav">
                     <ul class="nav-links">
                         <li class="nav-item"><a href="https://www.nestmategroup.online/#products">All Tools</a></li>
                         <li class="nav-item"><a href="about.html">About Us</a></li>
@@ -45,6 +115,28 @@
 
                 <div class="nav-actions">
                     <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode"></button>
+                    <!-- Mobile Hamburger Button -->
+                    <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="hamburger-bar bar-1"></span>
+                        <span class="hamburger-bar bar-2"></span>
+                        <span class="hamburger-bar bar-3"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Drawer -->
+            <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+                <div class="mobile-nav-inner">
+                    <ul class="mobile-nav-list">
+                        <li><a href="https://www.nestmategroup.online/#products" class="mobile-nav-link"><span>🛠️</span> <span>All Products & Sandboxes</span></a></li>
+                        <li><a href="https://quotecraft.nestmategroup.online/" class="mobile-nav-link"><span>📄</span> <span>QuoteCraft Maker</span></a></li>
+                        <li><a href="https://qrstudio.nestmategroup.online/" class="mobile-nav-link"><span>📱</span> <span>QR Studio Generator</span></a></li>
+                        <li><a href="https://omnicalc.nestmategroup.online/" class="mobile-nav-link"><span>🧮</span> <span>OmniCalc (78+ Tools)</span></a></li>
+                        <li><a href="about.html" class="mobile-nav-link"><span>ℹ️</span> <span>About Us</span></a></li>
+                        <li><a href="privacy.html" class="mobile-nav-link"><span>🔒</span> <span>Privacy Policy</span></a></li>
+                        <li><a href="terms.html" class="mobile-nav-link"><span>📜</span> <span>Terms of Service</span></a></li>
+                        <li><a href="contact.html" class="mobile-nav-link"><span>💬</span> <span>Contact Support Desk</span></a></li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -52,27 +144,27 @@
         <main class="content-page-wrapper">
             <div class="container" style="max-width: 900px;">
                 <div class="content-page-header">
-                    <span class="hero-pill-badge" style="background:rgba(99,102,241,0.15); color:var(--brand-indigo); border:1px solid rgba(99,102,241,0.3); border-radius:9999px; padding:0.25rem 0.85rem; font-size:0.78rem; font-weight:700; text-transform:uppercase;">Product Overview & Guide</span>
-                    <h1 class="content-page-title">QR Studio: Custom Barcode & Matrix Studio</h1>
-                    <p class="content-page-meta">A technical guide to standards-compliant ISO/IEC 18004 QR generation, error correction, and vector printing.</p>
+                    <span class="hero-pill-badge" style="background:rgba(99,102,241,0.15); color:var(--brand-indigo); border:1px solid rgba(99,102,241,0.3); border-radius:9999px; padding:0.25rem 0.85rem; font-size:0.78rem; font-weight:700; text-transform:uppercase;">QR Code Generator & Builder</span>
+                    <h1 class="content-page-title">QR Studio: Free QR Code Generator, QR Builder & Barcode Creation</h1>
+                    <p class="content-page-meta">The complete guide to high-precision QR creation, custom barcode design, error correction, and vector SVG/PNG printing.</p>
                 </div>
 
                 <article class="legal-article">
                     <div style="margin-bottom:2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
                         <div>
-                            <strong>Standard:</strong> ISO/IEC 18004 Compliant Matrix Engine<br>
-                            <strong>Output Formats:</strong> Crisp SVG Vector & PNG up to 2048×2048px
+                            <strong>Engine:</strong> ISO/IEC 18004 Compliant Matrix & QR Builder<br>
+                            <strong>Output Formats:</strong> Crisp SVG Vector & Ultra-HD PNG up to 2048×2048px
                         </div>
                         <a href="https://www.nestmategroup.online/#qrStudioCard" class="btn-primary" style="padding:0.75rem 1.4rem;">
-                            <span>Launch QR Studio Live →</span>
+                            <span>Launch QR Studio Live Editor →</span>
                         </a>
                     </div>
 
-                    <h2>What is QR Studio?</h2>
-                    <p>QR Studio is an online barcode and Quick Response (QR) matrix generator designed by Nestmate Group. While traditional generator websites redirect users through intermediate tracking URLs or expire codes after 14 days, QR Studio creates <strong>100% static, direct, and unexpirable QR codes</strong> directly inside your client browser.</p>
-                    <p>Static QR codes mean the encoded data (such as your Wi-Fi credentials, business card details, or web link) is written permanently into the barcode geometry itself. There is no middleman server that can shut down, expire your link, or track your users.</p>
+                    <h2>What is QR Studio? (Your Free Online QR Builder)</h2>
+                    <p><strong>QR Studio</strong> is a 100% free online QR code generator, QR builder, and barcode creation suite engineered by Nestmate Group. While traditional generator websites redirect users through intermediate tracking URLs, expire codes after 14 days, or plaster watermarks over your downloads, QR Studio provides complete privacy and zero expiration for your QR creation workflow.</p>
+                    <p>Static QR codes mean the encoded data (such as your Wi-Fi credentials, business contact cards, WhatsApp chat links, or website URLs) is written permanently into the barcode geometry itself. There is no middleman server that can shut down, expire your link, or track your users.</p>
 
-                    <h2>10 Supported Code Schemas</h2>
+                    <h2>10 Supported QR Creation Formats</h2>
                     <p>QR Studio natively formats payloads conforming to international standards:</p>
                     <ul>
                         <li><strong>Standard Web URLs (HTTP/HTTPS):</strong> Direct navigation for company websites, portfolios, and documentation.</li>

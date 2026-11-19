@@ -493,7 +493,8 @@ body {
     }
 
     .desktop-nav,
-    .nav-links {
+    .nav-links,
+    .site-header nav:not(.mobile-nav-drawer nav) {
         display: none !important;
     }
 
