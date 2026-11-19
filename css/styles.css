@@ -83,6 +83,9 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 body {
@@ -91,6 +94,8 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     min-height: 100vh;
     transition: background-color var(--transition-smooth), color var(--transition-smooth);
     position: relative;
@@ -196,6 +201,32 @@ body {
     justify-content: center;
     gap: 0.75rem;
     letter-spacing: 0.01em;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .announcement-bar {
+        font-size: 0.76rem;
+        padding: 0.45rem 0.75rem;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-bar {
+        font-size: 0.72rem;
+        flex-direction: column;
+        gap: 0.2rem;
+        line-height: 1.35;
+        padding: 0.35rem 0.6rem;
+    }
+    .announcement-badge {
+        font-size: 0.62rem;
+        padding: 0.1rem 0.4rem;
+    }
 }
 
 .announcement-badge {
@@ -206,6 +237,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.05em;
+    display: inline-block;
 }
 
 /* Navigation Header */
@@ -357,6 +389,139 @@ body {
 .theme-toggle-btn:hover {
     color: var(--text-main);
     border-color: var(--border-medium);
+}
+
+/* Mobile Menu Toggle Button (Hidden on Desktop) */
+.mobile-menu-toggle {
+    display: none;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-md);
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-main);
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0;
+    transition: all var(--transition-fast);
+}
+
+.mobile-menu-toggle:hover {
+    border-color: var(--border-medium);
+    background: var(--bg-surface);
+}
+
+.hamburger-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: var(--text-main);
+    border-radius: 2px;
+    transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.mobile-menu-toggle.active .bar-1 {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active .bar-2 {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active .bar-3 {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile Nav Drawer Dropdown */
+.mobile-nav-drawer {
+    display: none;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-medium);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+.mobile-nav-drawer.active {
+    display: block;
+    max-height: 600px;
+    opacity: 1;
+}
+
+.mobile-nav-inner {
+    padding: 1rem 1.25rem 1.5rem;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mobile-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.94rem;
+    font-weight: 600;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    transition: all var(--transition-fast);
+}
+
+.mobile-nav-link:hover, .mobile-nav-link:active {
+    background: var(--brand-indigo);
+    color: #ffffff;
+    border-color: var(--brand-indigo);
+    transform: translateX(4px);
+}
+
+/* Header & Nav Media Query for Tablet & Mobile */
+@media (max-width: 850px) {
+    .nav-row {
+        height: 62px;
+    }
+
+    .desktop-nav,
+    .nav-links {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .cmd-search-text,
+    .cmd-search-btn .kbd-shortcut {
+        display: none !important;
+    }
+
+    .cmd-search-btn {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        justify-content: center;
+        border-radius: var(--radius-md);
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .brand-logo-img {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 /* Hero Section */
@@ -1888,5 +2053,315 @@ input[type="range"]::-webkit-slider-thumb {
 @media (max-width: 850px) {
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================
+   Comprehensive Mobile & Tablet Responsiveness System
+   ========================================================== */
+
+/* Tablet & Mobile (<= 850px) */
+@media (max-width: 850px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .product-layout {
+        grid-template-columns: 1fr;
+        padding: 1.75rem 1.25rem;
+        gap: 2rem;
+    }
+}
+
+/* Mobile Devices (<= 640px) */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Hero Section Mobile */
+    .hero-section {
+        padding: 3rem 0 1.75rem;
+    }
+
+    .hero-pill {
+        font-size: 0.76rem;
+        padding: 0.28rem 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+        font-size: clamp(1.85rem, 8vw, 2.5rem);
+        letter-spacing: -0.03em;
+        line-height: 1.18;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.75rem;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-cta-group .btn-primary,
+    .hero-cta-group .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 0.85rem 1.25rem;
+        box-sizing: border-box;
+    }
+
+    /* Product Cards Mobile */
+    .product-card {
+        margin-bottom: 1.75rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .product-layout {
+        padding: 1.25rem 0.85rem;
+        gap: 1.5rem;
+    }
+
+    .product-title {
+        font-size: 1.55rem;
+    }
+
+    .product-tagline {
+        font-size: 0.92rem;
+        margin-bottom: 0.85rem;
+    }
+
+    .product-description-text {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+    }
+
+    .product-features-grid {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .feature-point {
+        font-size: 0.84rem;
+    }
+
+    .spec-tags-cloud {
+        gap: 0.35rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .spec-pill {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    /* Product Action Buttons Mobile */
+    .product-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.65rem;
+    }
+
+    .product-actions .btn-primary,
+    .product-actions .btn-secondary,
+    .product-actions .btn-visit-site {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+    }
+
+    /* Sandboxes Mobile */
+    .sandbox-card {
+        border-radius: var(--radius-md);
+    }
+
+    .sandbox-header {
+        padding: 0.75rem 0.9rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .sandbox-title-wrap {
+        font-size: 0.82rem;
+    }
+
+    .sandbox-header-visit-btn {
+        font-size: 0.72rem;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .sandbox-body {
+        padding: 1rem 0.75rem;
+        gap: 1rem;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    /* QuoteCraft Responsive Table */
+    .quote-table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 0.25rem 0;
+        padding-bottom: 0.35rem;
+    }
+
+    .quote-items-table {
+        min-width: 320px;
+        font-size: 0.8rem;
+    }
+
+    .quote-items-table input.input-field {
+        padding: 0.35rem 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .quote-summary-box {
+        padding: 0.85rem;
+    }
+
+    .summary-line {
+        font-size: 0.8rem;
+    }
+
+    /* QR Studio Preview Mobile */
+    .qr-preview-wrapper {
+        padding: 1rem 0.75rem;
+    }
+
+    .qr-canvas-holder {
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    #qrLiveCanvas {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .wcag-indicator {
+        font-size: 0.72rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    /* OmniCalc Mobile */
+    .calc-nav-tabs {
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+
+    .calc-tab-btn {
+        flex: 1 1 auto;
+        padding: 0.5rem 0.65rem;
+        font-size: 0.78rem;
+        text-align: center;
+    }
+
+    .calc-stat-card {
+        padding: 1rem 0.75rem !important;
+    }
+
+    .calc-stat-num {
+        font-size: 1.35rem !important;
+    }
+
+    .sandbox-footer-visit-row {
+        flex-direction: column;
+        gap: 0.4rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Category Filter Navigation Mobile */
+    .filter-section {
+        padding: 1.5rem 0 1rem;
+    }
+
+    .filter-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0.25rem 0.25rem 0.65rem;
+        gap: 0.45rem;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .filter-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+        font-size: 0.82rem;
+        padding: 0.45rem 0.85rem;
+    }
+
+    /* Ad Container Mobile */
+    .ad-container {
+        padding: 0;
+        margin: 1.5rem auto;
+    }
+
+    /* Comparison Section Mobile */
+    .comparison-section {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.92rem;
+    }
+
+    /* Modals Mobile */
+    .spec-modal-box,
+    .cmd-modal-box {
+        width: 95vw !important;
+        max-width: 95vw !important;
+        padding: 1.25rem 1rem !important;
+        max-height: 90vh !important;
+    }
+
+    .cmd-modal-input {
+        font-size: 0.92rem;
+    }
+}
+
+/* Small Smart Phones (<= 400px) */
+@media (max-width: 400px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .brand-logo-img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
     }
 }

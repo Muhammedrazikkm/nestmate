@@ -123,11 +123,11 @@
                     <img src="assets/favicon.jpg" alt="Nestmate Logo" class="brand-logo-img" width="38" height="38">
                     <div class="brand-name">
                         Nestmate
-                        <!-- <span class="brand-tag">SUITE</span> -->
                     </div>
                 </a>
 
-                <nav>
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
                     <ul class="nav-links">
                         <li class="nav-item"><a href="#products">Products</a></li>
                         <li class="nav-item"><a href="about.html">About</a></li>
@@ -138,18 +138,41 @@
                 </nav>
 
                 <div class="nav-actions">
-                    <button type="button" class="cmd-search-btn" id="cmdSearchBtn" title="Search all tools (⌘K)">
+                    <button type="button" class="cmd-search-btn" id="cmdSearchBtn" title="Search all tools (⌘K)" aria-label="Search all tools">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
-                        <span>Search Tools...</span>
+                        <span class="cmd-search-text">Search Tools...</span>
                         <kbd class="kbd-shortcut">⌘K</kbd>
                     </button>
 
                     <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode">
                         <!-- Icon injected by JS -->
                     </button>
+
+                    <!-- Mobile Menu Hamburger Button -->
+                    <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="hamburger-bar bar-1"></span>
+                        <span class="hamburger-bar bar-2"></span>
+                        <span class="hamburger-bar bar-3"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Drawer -->
+            <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+                <div class="mobile-nav-inner">
+                    <ul class="mobile-nav-list">
+                        <li><a href="#products" class="mobile-nav-link"><span>🛠️</span> <span>All Products & Sandboxes</span></a></li>
+                        <li><a href="https://quotecraft.nestmategroup.online/" class="mobile-nav-link"><span>📄</span> <span>QuoteCraft Quotation Maker</span></a></li>
+                        <li><a href="https://qrstudio.nestmategroup.online/" class="mobile-nav-link"><span>📱</span> <span>QR Studio Barcode Suite</span></a></li>
+                        <li><a href="https://omnicalc.nestmategroup.online/" class="mobile-nav-link"><span>🧮</span> <span>OmniCalc (78+ Calculators)</span></a></li>
+                        <li><a href="about.html" class="mobile-nav-link"><span>ℹ️</span> <span>About Nestmate</span></a></li>
+                        <li><a href="privacy.html" class="mobile-nav-link"><span>🔒</span> <span>Privacy & Cookie Policy</span></a></li>
+                        <li><a href="#faq" class="mobile-nav-link"><span>❓</span> <span>Frequently Asked Questions</span></a></li>
+                        <li><a href="contact.html" class="mobile-nav-link"><span>💬</span> <span>Contact Support Desk</span></a></li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -401,7 +424,7 @@
                                     </div>
 
                                     <!-- Items Table -->
-                                    <div>
+                                    <div class="quote-table-responsive">
                                         <table class="quote-items-table">
                                             <thead>
                                                 <tr>
